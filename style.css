@@ -120,6 +120,21 @@ img{
     width: auto;
 }
 
+.error{
+    text-align:center;
+    justify-items: center;
+    background-color: #1C304A; 
+    opacity: 0.9;
+    margin-top: 100px;
+    padding-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+    width:300px;
+    color:white;
+    position:absolute;
+    z-index:2;
+}
+
 /* ---------- Mobile ----------- */
 @media only screen and (max-width: 600px){
  
