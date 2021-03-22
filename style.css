@@ -1,0 +1,126 @@
+body, html{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+/* --------- Header ----------*/
+.intro{
+    background-image: url(./images/hero-banner-image.jpg);
+    height: 400px;
+    left:0;
+}
+
+.containerHeader{
+    display:flex;
+    width:100%;
+    margin-left: 15%;
+    padding-top:5vh; 
+    justify-content: left;
+    align-items: center;
+    color:white;
+}
+
+.headerItems{
+    height: 300px;  
+    max-width: 500px;
+}
+
+.headerItems > h1 {
+    font-size: 32px; 
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: -5px;
+}
+.headerItems > p {
+    font-size: 16px; 
+}
+.headerButton{
+    position: relative;
+    background-color: #C4EF72;
+    border-style: none;
+    border-radius: 2px;
+    color:black;
+    height: 50px;
+    width:200px;
+    font-size: 16px;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+/* --------- Mobile Header ----------*/
+@media only screen and (max-width: 600px) {
+    .headerItems{
+        height: 300px;  
+        max-width: 320px;
+    }
+  }
+
+/*------------ Product ----------*/
+.titleContainer{
+    width:100%;
+    margin:auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.productTitle{
+    margin:auto;
+    margin-top: 50px;
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top: 50px;
+    height:auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.productItem {
+    flex-direction: column;
+    min-width: 355px;
+    max-width: 355px;
+    margin-bottom: 50px;
+}
+.productItem > h2{
+    font-size: 16px;
+}
+.productItem > a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.productItem > a:hover{
+    text-decoration: underline;
+    color: #1C304A;
+}
+
+.pricesContainer{
+    display: flex;
+}
+
+.oldPrice{
+    font-size: 16px;
+    color: #8E97A2;
+    text-decoration: line-through;   
+    margin-left: 5px; 
+}
+
+.newPrice{
+    font-size: 16px;
+    color: #801010;
+}
+
+img{
+    height: 300px;
+    width: auto;
+}
