@@ -15,7 +15,6 @@ body, html{
 
 .containerHeader{
     display:flex;
-    width:100%;
     margin-left: 15%;
     padding-top:5vh; 
     justify-content: left;
@@ -51,13 +50,6 @@ body, html{
     cursor: pointer;
 }
 
-/* --------- Mobile Header ----------*/
-@media only screen and (max-width: 600px) {
-    .headerItems{
-        height: 300px;  
-        max-width: 320px;
-    }
-  }
 
 /*------------ Product ----------*/
 .titleContainer{
@@ -80,20 +72,22 @@ body, html{
     margin:auto;
     margin-top: 50px;
     height:auto;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
     margin-bottom: 50px;
 }
 .productItem {
     flex-direction: column;
-    min-width: 355px;
-    max-width: 355px;
+    align-items: center;
+    min-width: 350px;
+    max-width: 350px;
     margin-bottom: 50px;
 }
 .productItem > h2{
     font-size: 16px;
 }
 .productItem > a{
+    height: 50px;
     font-size: 16px;
     text-decoration: none;
     color: black;
@@ -102,6 +96,7 @@ body, html{
 .productItem > a:hover{
     text-decoration: underline;
     color: #1C304A;
+    cursor:pointer;
 }
 
 .pricesContainer{
@@ -124,3 +119,68 @@ img{
     height: 300px;
     width: auto;
 }
+
+/* ---------- Mobile ----------- */
+@media only screen and (max-width: 600px){
+ 
+    /* ------- HEADER MOBILE--------*/
+
+    .intro{ 
+        display: flex;
+        width:100%;
+    }
+
+    .containerHeader{
+        display:flex;
+        width:375px;
+        height: auto;  
+        max-width: 375px;
+        justify-content: center;
+    }
+    .headerItems{
+        width:335px;
+        max-width: 335px;
+        height: auto;
+        margin:auto;
+        padding-bottom: 80px;
+    }
+    .headerItems > h1 {
+        margin: auto;
+        font-size: 40px;
+        padding-top: 0px;
+        width: auto;
+    }
+
+    /*------------- PRODUCT MOBILE ----------*/
+   .containerAbout{
+        max-width: 375px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titleContainer{
+        width:375px;
+        max-width: 375px;
+        display: flex;
+        align-items: center;
+    }
+    .aboutBorder{
+        display: flex;
+        margin-top:100px;
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .aboutTitle{
+        width:290px;
+        max-width:290px;
+        font-size: 40px;
+        margin:auto;
+        margin-top:25px;
+    }
+    .aboutItem{
+        text-align: center;
+    }
+ 
+}
+
+  
