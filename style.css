@@ -180,6 +180,7 @@ img{
         width:375px;
         height: auto;  
         max-width: 375px;
+        padding-top:5vh; 
         justify-content: center;
         margin-left: 5vw;
     }
